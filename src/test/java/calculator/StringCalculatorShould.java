@@ -30,4 +30,9 @@ class StringCalculatorShould {
     public void numbersCommaDelimitedShouldBeSummed() {
         assertEquals(3,stringCalculator.add("1,2"));
     }
+
+    @Test
+    public void numbersNewlineDelimitedShouldBeSummed() {
+        assertEquals(3,StringCalculator.add("1\n2"));
+    }
 }
